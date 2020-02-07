@@ -1,5 +1,7 @@
 package br.com.rsinet.hub_bdd.appium.stepDefinitions;
 
+import static org.junit.Assert.assertTrue;
+
 import br.com.rsinet.hub_bdd.appium.manager.TestContext;
 import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
@@ -7,12 +9,14 @@ import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import hub_bdd.appium.pageObject.HomeScreen;
 import hub_bdd.appium.pageObject.ProdutoScreen;
+import junit.framework.Assert;
 
 public class HomeSteps {
 
-	HomeScreen home;
-	TestContext testContext;
-	ProdutoScreen produtos;
+	private HomeScreen home;
+	private TestContext testContext;
+	private ProdutoScreen produtos;
+	private String nomeProduto;
 
 	public HomeSteps(TestContext context) {
 		testContext = context;
@@ -41,11 +45,13 @@ public class HomeSteps {
 
 	@Quando("^clicar no produto desejado$")
 	public void clicar_no_produto_desejado() throws Throwable {
-		produtos.click_MouseEscolhido("HP Z8000 BLUETOOTH MOUSE");
+		nomeProduto = "HP Z8000 BLUETOOTH MOUSE";
+		produtos.click_MouseEscolhido(nomeProduto);
 	}
 
 	@Entao("^a tela do produto deverá ser exibida$")
 	public void a_tela_do_produto_deverá_ser_exibida() throws Throwable {
+		assertTrue(nomeProduto.equals(produtos.getTituloProduto()));
 	}
 
 	@Quando("^eu pesquisar na barra de pesquisa por um produto invalido$")
@@ -57,5 +63,6 @@ public class HomeSteps {
 
 	@Entao("^será exibido na tela uma mensagem dizendo que o produto não foi encontrado$")
 	public void será_exibido_na_tela_uma_mensagem_dizendo_que_o_produto_não_foi_encontrado() throws Throwable {
+		assertTrue(produtos.getMensagemErro().contains("No results for"));
 	}
 }

@@ -9,8 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "Feature",
 		glue = {"br.com.rsinet.hub_bdd.appium.stepDefinitions"},
-		monochrome = true,
-		tags = {"@PesquisaPorTexto"}
+		monochrome = true
 		)
 public class TestRunner {
 

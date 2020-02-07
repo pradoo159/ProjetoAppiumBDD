@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import br.com.rsinet.hub_bdd.appium.manager.AppManager;
 import io.appium.java_client.MobileElement;
@@ -32,7 +34,11 @@ public class HomeScreen {
 	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/editTextSearch")
 	private WebElement txtbx_Search;
 
-	public void click_Menu() {
+	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/textViewMenuUser")
+	private WebElement txt_usuarioLogado;
+
+	public void click_Menu() throws InterruptedException {
+		Thread.sleep(3000);
 		btn_Menu.click();
 	}
 
@@ -50,6 +56,10 @@ public class HomeScreen {
 
 	public void escreverPesquisa(String produto) {
 		txtbx_Search.sendKeys(produto);
+	}
+	
+	public String usuarioLogado() {
+		return txt_usuarioLogado.getText();
 	}
 	
 }

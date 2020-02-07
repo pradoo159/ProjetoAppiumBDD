@@ -1,17 +1,26 @@
 package br.com.rsinet.hub_bdd.appium.stepDefinitions;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import br.com.rsinet.hub_bdd.appium.manager.TestContext;
+import br.com.rsinet.hub_bdd.util.Scroll;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import hub_bdd.appium.pageObject.CadastroScreen;
 import hub_bdd.appium.pageObject.HomeScreen;
+import io.appium.java_client.android.AndroidDriver;
 
 public class CadastroSteps {
 	
-	HomeScreen home;
-	CadastroScreen cadastro;
- 	TestContext testContext;
+	private HomeScreen home;
+	private CadastroScreen cadastro;
+	private TestContext testContext;
+ 	private String usuario;
 	
 	public CadastroSteps(TestContext context) {
 		testContext = context;
@@ -22,7 +31,8 @@ public class CadastroSteps {
 
 	@E("^eu inserir dados válidos nos campos$")
 	public void eu_inserir_dados_válidos_nos_campos() throws Throwable {
-	    cadastro.escreveUser("pradoo1524");
+		usuario = "pradoo8234";
+	    cadastro.escreveUser(usuario);
 	    cadastro.escreveEmail("emerson.prado@rsinet.com.br");
 	    cadastro.escreveSenha("Teste@1234");
 	    cadastro.escreveConfirmaSenha("Teste@1234");
@@ -43,7 +53,8 @@ public class CadastroSteps {
 
 	@Então("^o usuario deverá ser redirecionado para a tela inicial logado na conta cadastrada$")
 	public void o_usuario_deverá_ser_redirecionado_para_a_tela_inicial_logado_na_conta_cadastrada() throws Throwable {
-		System.out.println("OK");
+		home.click_Menu();
+		assertTrue(home.usuarioLogado().equals(usuario));
 	}
 
 	@E("^eu inserir dados inválidos nos campos$")
@@ -65,7 +76,7 @@ public class CadastroSteps {
 	@Então("^não será possível clicar no botão de registrar$")
 	public void não_será_possível_clicar_no_botão_de_registrar() throws Throwable {
 		cadastro.click_Register();
-		System.out.println("ok");
+		assertFalse(cadastro.verificarBtnRegistrar());
 	}
 	
 }

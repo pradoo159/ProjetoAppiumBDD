@@ -127,4 +127,8 @@ public class CadastroScreen {
 		driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 		Scroll.scrollAndClick(driver, pais);
 	}
+	
+	public Boolean verificarBtnRegistrar() {
+		return btn_Registrar.isEnabled();
+	}
 }
