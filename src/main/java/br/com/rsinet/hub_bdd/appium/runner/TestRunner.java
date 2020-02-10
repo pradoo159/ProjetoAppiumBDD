@@ -9,6 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "Feature",
 		glue = {"br.com.rsinet.hub_bdd.appium.stepDefinitions"},
+		tags = {"@PesquisaPorCategoria", "@Valido"},
 		monochrome = true
 		)
 public class TestRunner {

@@ -1,3 +1,12 @@
-C:\Users\emerson.prado\eclipse-toolsqa\workspace-appium\hub_bdd.appium\src\main\java\br\com\rsinet\hub_bdd\appium\manager\AppManager.java
-C:\Users\emerson.prado\eclipse-toolsqa\workspace-appium\hub_bdd.appium\src\main\java\br\com\rsinet\hub_bdd\appium\dataProviders\ReadProperties.java
-C:\Users\emerson.prado\eclipse-toolsqa\workspace-appium\hub_bdd.appium\src\main\java\hub_bdd\appium\pageObject\HomeScreen.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\br\com\rsinet\hub_bdd\appium\dataProviders\ReadProperties.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\br\com\rsinet\hub_bdd\appium\runner\TestRunner.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\br\com\rsinet\hub_bdd\appium\stepDefinitions\HomeSteps.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\br\com\rsinet\hub_bdd\util\Hooks.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\br\com\rsinet\hub_bdd\appium\manager\AppManager.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\br\com\rsinet\hub_bdd\appium\manager\TestContext.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\hub_bdd\appium\pageObject\CadastroScreen.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\br\com\rsinet\hub_bdd\util\Scroll.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\hub_bdd\appium\pageObject\ProdutoScreen.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\br\com\rsinet\hub_bdd\appium\stepDefinitions\CadastroSteps.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\hub_bdd\appium\pageObject\HomeScreen.java
+D:\eclipse-workspace\ProjetoAppiumBDD\src\main\java\br\com\rsinet\hub_bdd\appium\manager\PageObjectManager.java
