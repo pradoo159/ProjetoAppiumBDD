@@ -11,11 +11,11 @@ Funcionalidade: Pesquisa por categoria
   @Valido
   Cenario: Pesquisa por categoria valida
     Quando eu clicar em uma categoria
-    E clicar no produto desejado
+    E clicar no produto escolhido
     Entao a tela do produto deverá ser exibida
 
   @Invalido
-  Cenario: Pesquisa por categoria valida
+  Cenario: Pesquisa por categoria invalida
     Quando eu clicar em uma categoria
-    E clicar no produto desejado
-    Entao o titulo do produto será diferente
+    E filtrar a pesquisa
+    Entao nenhum produto será exibido

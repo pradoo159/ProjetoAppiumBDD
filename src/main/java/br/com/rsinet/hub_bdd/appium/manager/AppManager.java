@@ -37,7 +37,7 @@ public class AppManager {
 		
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("deviceName", deviceName);
-		caps.setCapability("newCommandTimeOut", "120");
+		caps.setCapability("newCommandTimeout", "2000");
 		caps.setCapability("platformName", platformName);
 		caps.setCapability("appPackage", appPackage);
 		caps.setCapability("appActivity", appActivity);

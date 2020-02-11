@@ -1,36 +1,44 @@
 package br.com.rsinet.hub_bdd.appium.stepDefinitions;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import br.com.rsinet.hub_bdd.appium.manager.TestContext;
+import br.com.rsinet.hub_bdd.appium.util.Constant;
+import br.com.rsinet.hub_bdd.appium.util.Data;
+import br.com.rsinet.hub_bdd.appium.util.ExcelUtils;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
-import cucumber.api.java.pt.Quando;
-import hub_bdd.appium.pageObject.HomeScreen;
 import hub_bdd.appium.pageObject.ProdutoScreen;
 
 public class ProdutoSteps {
 
 	private TestContext testContext;
 	private ProdutoScreen produtos;
-	private String nomeProduto;
 
-	public ProdutoSteps(TestContext context) {
+	public ProdutoSteps(TestContext context) throws Exception {
 		testContext = context;
 		produtos = testContext.getPageObjectManager().getProdutoScreen();
 	}
-
+	
+	// Pesquisa por texto valida
 	@E("^clicar no produto desejado$")
 	public void clicar_no_produto_desejado() throws Throwable {
-		nomeProduto = "HP PRO TABLET 608 G1";
-		produtos.click_MouseEscolhido(nomeProduto);
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "produtoTexto");
+		produtos.click_ProdutoEscolhido(Data.getProduto());
+	}
+	
+	// Pesquisa por categoria valida
+	@E("^clicar no produto escolhido$")
+	public void clicar_no_produto_escolhido() throws Throwable {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "produtoCategoria");
+		produtos.click_ProdutoEscolhido(Data.getProduto());
 	}
 
 	// Pesquisas validas
 	@Entao("^a tela do produto deverá ser exibida$")
 	public void a_tela_do_produto_deverá_ser_exibida() throws Throwable {
-		assertTrue(nomeProduto.equalsIgnoreCase(produtos.getTituloProduto()));
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "produtoCategoria");
+		assertTrue(produtos.getTituloProduto().contains(Data.getProduto()));
 	}
 	
 	// Pesquisa por texto invalida
@@ -40,9 +48,22 @@ public class ProdutoSteps {
 	}
 
 	// Pesquisa por categoria invalida
-	@Entao("^o titulo do produto será diferente$")
-	public void o_titulo_do_produto_será_diferente() throws Throwable {
-		assertFalse(nomeProduto.equalsIgnoreCase(produtos.getTituloProduto()));
+	@E("^filtrar a pesquisa$")
+	public void filtrar_a_pesquisa() throws Throwable {
+		Thread.sleep(2000);
+		produtos.click_Filter();
+		produtos.click_FiltroScroll();
+		produtos.click_ScrollOpcao("Scroll Ball");
+		produtos.click_FiltroScroll();
+		produtos.click_FiltroColor();
+		produtos.click_ColorOpcao();
+		produtos.click_FiltroColor();
+		produtos.click_Apply();
+	}
+
+	@Entao("^nenhum produto será exibido$")
+	public void nenhum_produto_será_exibido() throws Throwable {
+		assertTrue(produtos.getMensagemErro().contains("No results"));
 	}
 
 }

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import br.com.rsinet.hub_bdd.appium.manager.AppManager;
-import br.com.rsinet.hub_bdd.util.Scroll;
+import br.com.rsinet.hub_bdd.appium.util.Scroll;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
