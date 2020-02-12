@@ -3,14 +3,14 @@ package br.com.rsinet.hub_bdd.appium.stepDefinitions;
 import static org.junit.Assert.assertTrue;
 
 import br.com.rsinet.hub_bdd.appium.manager.TestContext;
+import br.com.rsinet.hub_bdd.appium.pageObject.HomeScreen;
+import br.com.rsinet.hub_bdd.appium.pageObject.ProdutoScreen;
 import br.com.rsinet.hub_bdd.appium.util.Constant;
 import br.com.rsinet.hub_bdd.appium.util.Data;
 import br.com.rsinet.hub_bdd.appium.util.ExcelUtils;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
-import hub_bdd.appium.pageObject.HomeScreen;
-import hub_bdd.appium.pageObject.ProdutoScreen;
 
 public class HomeSteps {
 
@@ -38,7 +38,6 @@ public class HomeSteps {
 
 	@Quando("^eu pesquisar na barra de pesquisa por um produto valido$")
 	public void eu_pesquisar_na_barra_de_pesquisa_por_um_produto_valido() throws Throwable {
-		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "produtoTexto");
 		home.click_Lupa();
 		home.escreverPesquisa(Data.getPesquisa());
 		home.click_Lupa();
@@ -54,7 +53,6 @@ public class HomeSteps {
 	
 	@Quando("^eu clicar em uma categoria$")
 	public void eu_clicar_em_uma_categoria() throws Throwable {
-		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "produtoCategoria");
 		home.click_Categoria(Data.getCategoria());
 		
 	}

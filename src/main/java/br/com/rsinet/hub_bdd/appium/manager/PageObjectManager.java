@@ -1,8 +1,8 @@
 package br.com.rsinet.hub_bdd.appium.manager;
 
-import hub_bdd.appium.pageObject.CadastroScreen;
-import hub_bdd.appium.pageObject.HomeScreen;
-import hub_bdd.appium.pageObject.ProdutoScreen;
+import br.com.rsinet.hub_bdd.appium.pageObject.CadastroScreen;
+import br.com.rsinet.hub_bdd.appium.pageObject.HomeScreen;
+import br.com.rsinet.hub_bdd.appium.pageObject.ProdutoScreen;
 import io.appium.java_client.android.AndroidDriver;
 
 public class PageObjectManager {

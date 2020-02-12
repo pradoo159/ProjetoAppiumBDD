@@ -21,7 +21,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17112520300,
+              "duration": 191491000,
               "status": "passed"
             },
             "line": 7,
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 5715632900,
+              "duration": 4885454100,
               "status": "passed"
             },
             "line": 8,
@@ -46,6 +46,17 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 13875336900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
         "line": 11,
         "name": "Cadastro com dados válidos",
         "description": "",
@@ -53,7 +64,7 @@
         "after": [
           {
             "result": {
-              "duration": 532729200,
+              "duration": 473936800,
               "status": "passed"
             },
             "match": {
@@ -62,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 141124300,
+              "duration": 151996000,
               "status": "passed"
             },
             "match": {
@@ -75,7 +86,7 @@
         "steps": [
           {
             "result": {
-              "duration": 30058198900,
+              "duration": 28817054500,
               "status": "passed"
             },
             "line": 12,
@@ -87,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 7956139700,
+              "duration": 8444689100,
               "status": "passed"
             },
             "line": 13,
@@ -99,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 4068648300,
+              "duration": 4024871400,
               "status": "passed"
             },
             "line": 14,
@@ -126,7 +137,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16708458700,
+              "duration": 899700,
               "status": "passed"
             },
             "line": 7,
@@ -138,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 5152205900,
+              "duration": 4993954100,
               "status": "passed"
             },
             "line": 8,
@@ -151,6 +162,17 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 14742335400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
         "line": 17,
         "name": "Cadastro com dados inválidos",
         "description": "",
@@ -158,7 +180,7 @@
         "after": [
           {
             "result": {
-              "duration": 340170300,
+              "duration": 284674100,
               "status": "passed"
             },
             "match": {
@@ -167,7 +189,7 @@
           },
           {
             "result": {
-              "duration": 185978800,
+              "duration": 110461100,
               "status": "passed"
             },
             "match": {
@@ -180,7 +202,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31966171800,
+              "duration": 30062403000,
               "status": "passed"
             },
             "line": 18,
@@ -192,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 7666610000,
+              "duration": 7371351601,
               "status": "passed"
             },
             "line": 19,
@@ -245,7 +267,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17768386700,
+              "duration": 2127399,
               "status": "passed"
             },
             "line": 9,
@@ -258,6 +280,17 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 13861354600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
         "line": 12,
         "name": "Pesquisa por categoria valida",
         "description": "",
@@ -265,7 +298,7 @@
         "after": [
           {
             "result": {
-              "duration": 433778000,
+              "duration": 372749499,
               "status": "passed"
             },
             "match": {
@@ -274,7 +307,7 @@
           },
           {
             "result": {
-              "duration": 246610700,
+              "duration": 183303200,
               "status": "passed"
             },
             "match": {
@@ -287,7 +320,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4825830800,
+              "duration": 2111038400,
               "status": "passed"
             },
             "line": 13,
@@ -299,7 +332,7 @@
           },
           {
             "result": {
-              "duration": 5559770200,
+              "duration": 3025295999,
               "status": "passed"
             },
             "line": 14,
@@ -311,7 +344,7 @@
           },
           {
             "result": {
-              "duration": 299531900,
+              "duration": 226623200,
               "status": "passed"
             },
             "line": 15,
@@ -338,7 +371,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15802024500,
+              "duration": 1230400,
               "status": "passed"
             },
             "line": 9,
@@ -351,6 +384,17 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 14292604300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
         "line": 18,
         "name": "Pesquisa por categoria invalida",
         "description": "",
@@ -358,7 +402,7 @@
         "after": [
           {
             "result": {
-              "duration": 357479400,
+              "duration": 331595800,
               "status": "passed"
             },
             "match": {
@@ -367,7 +411,7 @@
           },
           {
             "result": {
-              "duration": 255338600,
+              "duration": 142119201,
               "status": "passed"
             },
             "match": {
@@ -380,7 +424,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4644976200,
+              "duration": 2407919000,
               "status": "passed"
             },
             "line": 19,
@@ -392,7 +436,7 @@
           },
           {
             "result": {
-              "duration": 9628669200,
+              "duration": 9310223600,
               "status": "passed"
             },
             "line": 20,
@@ -404,7 +448,7 @@
           },
           {
             "result": {
-              "duration": 624444200,
+              "duration": 633087300,
               "status": "passed"
             },
             "line": 21,
@@ -457,7 +501,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15457843300,
+              "duration": 833400,
               "status": "passed"
             },
             "line": 9,
@@ -470,6 +514,17 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 13577773700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
         "line": 12,
         "name": "Pesquisa por texto valida",
         "description": "",
@@ -477,7 +532,7 @@
         "after": [
           {
             "result": {
-              "duration": 463724100,
+              "duration": 413447400,
               "status": "passed"
             },
             "match": {
@@ -486,7 +541,7 @@
           },
           {
             "result": {
-              "duration": 201764000,
+              "duration": 234275300,
               "status": "passed"
             },
             "match": {
@@ -499,7 +554,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3918976300,
+              "duration": 3836257600,
               "status": "passed"
             },
             "line": 13,
@@ -511,7 +566,7 @@
           },
           {
             "result": {
-              "duration": 6360421900,
+              "duration": 2785454800,
               "status": "passed"
             },
             "line": 14,
@@ -523,7 +578,7 @@
           },
           {
             "result": {
-              "duration": 198192300,
+              "duration": 167077699,
               "status": "passed"
             },
             "line": 15,
@@ -550,7 +605,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16426028200,
+              "duration": 768499,
               "status": "passed"
             },
             "line": 9,
@@ -563,6 +618,17 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 13879298800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
         "line": 18,
         "name": "Pesquisa por texto invalida",
         "description": "",
@@ -570,7 +636,7 @@
         "after": [
           {
             "result": {
-              "duration": 350145000,
+              "duration": 344764399,
               "status": "passed"
             },
             "match": {
@@ -579,7 +645,7 @@
           },
           {
             "result": {
-              "duration": 162045900,
+              "duration": 137968899,
               "status": "passed"
             },
             "match": {
@@ -592,7 +658,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3141404500,
+              "duration": 3547128599,
               "status": "passed"
             },
             "line": 19,
@@ -604,7 +670,7 @@
           },
           {
             "result": {
-              "duration": 1171995100,
+              "duration": 1146517201,
               "status": "passed"
             },
             "line": 20,

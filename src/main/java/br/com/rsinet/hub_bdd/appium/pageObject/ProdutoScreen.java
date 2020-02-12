@@ -1,4 +1,4 @@
-package hub_bdd.appium.pageObject;
+package br.com.rsinet.hub_bdd.appium.pageObject;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -48,25 +48,26 @@ public class ProdutoScreen {
 	}
 
 	public void click_ProdutoEscolhido(String nomeProduto) {
+		nomeProduto = nomeProduto.toUpperCase();
 		Scroll.scrollAndClick(driver, nomeProduto);
 	}
 	
 	public void click_FiltroScroll() {
-		Click.ByVisibleText(driver, "BY SCROLLER TYPE");
+		Click.ByVisibleText(driver, "BY COMPATIBILITY");
 	}
 	
 	public void click_ScrollOpcao(String opcao) {
 		Click.ByVisibleText(driver, opcao);
 	}
 	
-	public void click_FiltroColor() {
-//		Click.ByVisibleText(driver, "BY CONNECTOR");
-		Click.ByVisibleText(driver, "BY COLOR");
+	public void click_FiltroConnector() {
+		Click.ByVisibleText(driver, "BY CONNECTOR");
+//		Click.ByVisibleText(driver, "BY COLOR");
 	}
 
-	public void click_ColorOpcao() {
-//		Click.ByVisibleText(driver, "WIRELESS");
-		filtro_CorRoxa.click();
+	public void click_ConnectorOpcao(String opcao) {
+		Click.ByVisibleText(driver, opcao);
+//		filtro_CorRoxa.click();
 	}
 
 	public void click_Apply() {

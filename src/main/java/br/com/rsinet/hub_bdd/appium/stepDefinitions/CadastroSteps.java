@@ -7,12 +7,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import br.com.rsinet.hub_bdd.appium.manager.TestContext;
+import br.com.rsinet.hub_bdd.appium.pageObject.CadastroScreen;
+import br.com.rsinet.hub_bdd.appium.pageObject.HomeScreen;
 import br.com.rsinet.hub_bdd.appium.util.Scroll;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
-import hub_bdd.appium.pageObject.CadastroScreen;
-import hub_bdd.appium.pageObject.HomeScreen;
 import io.appium.java_client.android.AndroidDriver;
 
 public class CadastroSteps {
@@ -31,7 +31,7 @@ public class CadastroSteps {
 
 	@E("^eu inserir dados válidos nos campos$")
 	public void eu_inserir_dados_válidos_nos_campos() throws Throwable {
-		usuario = "pradoo1116";
+		usuario = "pradoo1920";
 	    cadastro.escreveUser(usuario);
 	    cadastro.escreveEmail("emerson.prado@rsinet.com.br");
 	    cadastro.escreveSenha("Teste@1234");
